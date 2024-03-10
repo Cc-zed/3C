@@ -1,0 +1,158 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+
+/*-----------------------Task 1-----------------------
+
+int main() {
+    int count = 0;
+
+    for (int num = 100; num <= 999; ++num) {
+        int hundreds = num / 100;
+        int tens = (num / 10) % 10;
+        int ones = num % 10;
+
+        if (hundreds == tens || tens == ones || hundreds == ones) {
+            count++;
+        }
+    }
+
+    cout << "Result: " << count << endl;
+
+    return 0;
+}*/
+
+
+/*-----------------------Task 2-----------------------
+
+int main() {
+    int count = 0;
+
+    for (int num = 100; num <= 999; ++num) {
+        int hundreds = num / 100;
+        int tens = (num / 10) % 10;
+        int ones = num % 10;
+
+        if (hundreds != tens && tens != ones && hundreds != ones) {
+            count++;
+        }
+    }
+
+    cout << "Result: " << count << endl;
+
+    return 0;
+}*/
+
+
+/*-----------------------Task 3-----------------------
+
+int main() {
+    cout << "Enter number: ";
+    string number;
+    cin >> number;
+
+    string result = "";
+
+    for (char digit : number) {
+        if (digit != '3' && digit != '6') {
+            result += digit;
+        }
+    }
+
+    cout << "Result: " << result << endl;
+
+    return 0;
+}*/
+
+
+/*-----------------------Task 4-----------------------
+
+int main() {
+    int A;
+
+    cout << "Enter number A: ";
+    cin >> A;
+
+    cout << "Result: ";
+
+    for (int B = 1; B * B <= A; ++B) {
+        if (A % (B * B) == 0 && A % (B * B * B) != 0) {
+            cout << B << endl;
+        }
+    }
+
+    return 0;
+}*/
+
+
+/*-----------------------Task 5-----------------------
+
+int main() {
+    int A;
+
+    cout << "Enter A: ";
+    cin >> A;
+
+    int sum = 0;
+    int temp = abs(A);
+
+    while (temp > 0) {
+        sum += temp % 10;
+        temp /= 10;
+    }
+
+    int cube_sum = sum * sum * sum;
+
+    if (cube_sum == A * A) {
+        cout << "Cube of number " << A << " is " << A << "*" << A << " = " << A * A << endl;
+    }
+    else {
+        cout << "Cube of number " << A << " isnt " << A << "*" << A << " = " << A * A << endl;
+    }
+
+    return 0;
+}*/
+
+
+/*-----------------------Task 6-----------------------
+
+int main() {
+    int number;
+
+    cout << "Enter number: ";
+    cin >> number;
+
+    cout << "Number " << number << " dilutsa bez zalushky on: " << endl;
+    for (int i = 1; i <= number; ++i) {
+        if (number % i == 0) {
+            cout << i << endl;
+        }
+    }
+
+    return 0;
+}*/
+
+
+/*-----------------------Task 7-----------------------
+
+int main() {
+    int num1, num2;
+
+    cout << "Enter number 1: ";
+    cin >> num1;
+    cout << "Enter number 2: ";
+    cin >> num2;
+
+    cout << "Result: " << endl;
+    for (int i = 1; i <= min(num1, num2); ++i) {
+        if (num1 % i == 0 && num2 % i == 0) {
+            cout << i << endl;
+        }
+    }
+
+    return 0;
+}*/
+
+//----------------------- END -----------------------
